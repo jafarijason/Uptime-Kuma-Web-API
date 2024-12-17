@@ -1,0 +1,5 @@
+docker build --platform linux/amd64 -f Dockerfile-jason -t jafarijason/uptimekuma_restapi:v1.2.2-04 .
+
+docker push jafarijason/uptimekuma_restapi:v1.2.2-04
+
+ 

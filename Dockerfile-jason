@@ -1,0 +1,11 @@
+
+FROM  medaziz11/uptimekuma_restapi:v1.2.2
+
+
+COPY --chown=appuser:appgroup ./app/entrypoint-jason.sh /app/entrypoint-jason.sh
+
+RUN chmod +x /app/entrypoint-jason.sh
+
+#Run the app
+ENTRYPOINT ["/app/entrypoint-jason.sh"]
+
